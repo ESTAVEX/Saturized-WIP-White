@@ -9,6 +9,7 @@ var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     slidesPerView: 1,
     mousewheelControl: true,
+    keyboardControl: true,
     height: $(window).height(),
     autoHeight: true
 
