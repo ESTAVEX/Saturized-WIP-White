@@ -458,6 +458,7 @@ body [class*="col-"] {
 
     #navigation-wrapper .menu-list {
         margin-top: 60px;
+        transition: 0.5s ease all;
     }
 
     #sidebar {

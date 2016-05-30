@@ -24,10 +24,19 @@ $(document).ready(function() {
             $('#navigation-wrapper .menu-list').css('padding', '40px');
         else
             $('#navigation-wrapper .menu-list').css('padding', '0px');
-
-        open = !open;
     });
 
+    // Add menu padding from hidden to shown
+    $('#menu-content').on('hidden.bs.collapse', function () {
+        open = true;
+    });
+
+    // Remove menu padding from shown to hidden
+    $('#menu-content').on('shown.bs.collapse', function () {
+        open = false;
+    });
+
+    // Initialize imgLiquidFill
     $('.imgLiquidFill').imgLiquid();
 
 });
